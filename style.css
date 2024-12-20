@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse-Bold.otf);
+}
+body{
+    display: flex;
+    flex: 1;
+    margin: 0;
+}
+.side-bar{
+    width: 30%;
+    height: 100vh;
+    background-image: url(./images/bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.side-bar div{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Norse, serif;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+}
+ .side-bar div p{
+    margin: 0;
+ }
+
+.side-bar div img{
+    width: 4rem;
+    height: 5rem;
+}
+.side-bar p, .side-bar a{
+    margin-top: auto;
+    color: white;
+}
+
+.main {
+    width: 70%;
+    height: 100vh;
+    padding: 170px 30px 170px 30px;
+}
+.main form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: none;
+    margin: 0 -30px;
+    padding: 0px 30px 30px 30px ;
+}
+.main form div {
+    display: flex;
+    gap: 3px 50px;
+}
+.main form div div{
+    display:flex;
+    flex-direction: column;
+}
+.main p{
+    font-weight: bold;
+}
+.main p a{
+    text-decoration: none;
+    color: #596D48;
+}
+#submit-btn {
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 50px;
+    border: none;
+}
+
+
+input{
+    width: 250px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+}
+input#password :invalid{
+    border-color: red;
+}
+input#confirm-password  :invalid{
+    border-color: red;
+}
+
+
